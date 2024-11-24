@@ -42,6 +42,7 @@ jobs:
           path: |
             release.zip
             !venv/
+
   deploy:
     runs-on: ubuntu-latest
     needs: build
@@ -65,4 +66,4 @@ jobs:
         with:
           app-name: 'tech0-gen-8-step3-testapp-py2-20'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_9E80E5755C5D41898D48008462973C78 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_04D87FDBA2D443C3A11F12A8D9CB3586 }}
